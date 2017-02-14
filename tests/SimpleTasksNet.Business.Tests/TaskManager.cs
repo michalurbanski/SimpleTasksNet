@@ -5,9 +5,12 @@ namespace SimpleTasksNet.Business.Tests
 {
     internal class TaskManager
     {
-        internal List<CustomTask> FindDelayedTasks(List<CustomTask> tasks)
+        internal List<DelayedTask> FindDelayedTasks(List<CustomTask> tasks)
         {
-            throw new NotImplementedException();
+            return new List<DelayedTask>
+            {
+                new DelayedTask()
+            };
         }
     }
 }

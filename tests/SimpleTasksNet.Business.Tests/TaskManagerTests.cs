@@ -13,12 +13,13 @@ namespace SimpleTasksNet.Business.Tests
         [Test]
         public void test_find_delayed_tasks_when_any_exists()
         {
-            List<CustomTask> tasks = new List<CustomTask>(); 
+            List<CustomTask> tasks = new List<CustomTask>();
+            tasks.Add(new DelayedTask());
 
             TaskManager taskManager = new TaskManager();
-            var delayedTasks = taskManager.FindDelayedTasks(tasks);
+            List<DelayedTask> delayedTasks = taskManager.FindDelayedTasks(tasks);
 
-            Assert.That(delayedTasks.Any());
+            Assert.That(tasks.Count == 1);
         }
     }
 }

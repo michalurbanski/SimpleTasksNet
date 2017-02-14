@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomTask.cs" />
+    <Compile Include="DelayedTask.cs" />
     <Compile Include="TaskManager.cs" />
     <Compile Include="TaskManagerTests.cs" />
     <Compile Include="Test.cs" />
