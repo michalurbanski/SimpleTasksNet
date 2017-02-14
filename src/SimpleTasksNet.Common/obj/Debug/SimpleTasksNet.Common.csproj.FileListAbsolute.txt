@@ -1,0 +1,4 @@
+c:\git\SimpleTasksNet\src\SimpleTasksNet.Common\bin\Debug\SimpleTasksNet.Common.dll
+c:\git\SimpleTasksNet\src\SimpleTasksNet.Common\bin\Debug\SimpleTasksNet.Common.pdb
+c:\git\SimpleTasksNet\src\SimpleTasksNet.Common\obj\Debug\SimpleTasksNet.Common.dll
+c:\git\SimpleTasksNet\src\SimpleTasksNet.Common\obj\Debug\SimpleTasksNet.Common.pdb

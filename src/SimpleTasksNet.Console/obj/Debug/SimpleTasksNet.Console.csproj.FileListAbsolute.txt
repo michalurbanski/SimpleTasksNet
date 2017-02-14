@@ -1,0 +1,5 @@
+C:\git\SimpleTasksNet\src\SimpleTasksNet.Console\bin\Debug\SimpleTasksNet.Console.exe.config
+C:\git\SimpleTasksNet\src\SimpleTasksNet.Console\bin\Debug\SimpleTasksNet.Console.exe
+C:\git\SimpleTasksNet\src\SimpleTasksNet.Console\bin\Debug\SimpleTasksNet.Console.pdb
+C:\git\SimpleTasksNet\src\SimpleTasksNet.Console\obj\Debug\SimpleTasksNet.Console.exe
+C:\git\SimpleTasksNet\src\SimpleTasksNet.Console\obj\Debug\SimpleTasksNet.Console.pdb

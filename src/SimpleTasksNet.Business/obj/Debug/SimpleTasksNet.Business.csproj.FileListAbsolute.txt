@@ -1,0 +1,4 @@
+C:\git\SimpleTasksNet\src\SimpleTasksNet.Business\bin\Debug\SimpleTasksNet.Business.dll
+C:\git\SimpleTasksNet\src\SimpleTasksNet.Business\bin\Debug\SimpleTasksNet.Business.pdb
+C:\git\SimpleTasksNet\src\SimpleTasksNet.Business\obj\Debug\SimpleTasksNet.Business.dll
+C:\git\SimpleTasksNet\src\SimpleTasksNet.Business\obj\Debug\SimpleTasksNet.Business.pdb
