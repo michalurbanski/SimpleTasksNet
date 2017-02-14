@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7DC7B301-08D1-4205-905E-D7AEE72F9806}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{95EE0EE1-6187-4455-9BDD-8EAE6B466761}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SimpleTasksNet.Console</RootNamespace>
-    <AssemblyName>SimpleTasksNet.Console</AssemblyName>
+    <RootNamespace>SimpleTasksNet.Common.Tests</RootNamespace>
+    <AssemblyName>SimpleTasksNet.Common.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,16 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SimpleTasksNet.Business\SimpleTasksNet.Business.csproj">
-      <Project>{afe30adb-cff1-4ac7-9f82-59fbfcf0def6}</Project>
-      <Name>SimpleTasksNet.Business</Name>
+    <ProjectReference Include="..\..\src\SimpleTasksNet.Common\SimpleTasksNet.Common.csproj">
+      <Project>{18c70d2e-9bec-4aae-991e-dd3d8657626f}</Project>
+      <Name>SimpleTasksNet.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
