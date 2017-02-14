@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace SimpleTasksNet.Business.Tests
 {
     [TestFixture]
-    public class Class1
+    public class Test
     {
         [Test]
         public void test_nunit()
