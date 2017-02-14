@@ -1,4 +1,0 @@
-c:\git\SimpleTasksNet\src\SimpleTasksNet.Domain\bin\Debug\SimpleTasksNet.Domain.dll
-c:\git\SimpleTasksNet\src\SimpleTasksNet.Domain\bin\Debug\SimpleTasksNet.Domain.pdb
-c:\git\SimpleTasksNet\src\SimpleTasksNet.Domain\obj\Debug\SimpleTasksNet.Domain.dll
-c:\git\SimpleTasksNet\src\SimpleTasksNet.Domain\obj\Debug\SimpleTasksNet.Domain.pdb
