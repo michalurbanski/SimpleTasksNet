@@ -15,7 +15,19 @@ namespace SimpleTasksNet.Business.Tests
 
             var delayedTasks = act(tasks); 
 
-            Assert.That(delayedTasks.Count == 1);
+            Assert.That(delayedTasks.Count() == 1);
+        }
+
+        [Test]
+        public void test_find_delayed_tasks_no_delayed_in_tasks_collection()
+        {
+            List<CustomTask> tasks = new List<CustomTask>();
+            tasks.Add(new CustomTask());
+            tasks.Add(new CustomTask());
+
+            var delayedTasks = act(tasks);
+
+            Assert.That(!delayedTasks.Any());
         }
 
         [Test]
@@ -36,7 +48,7 @@ namespace SimpleTasksNet.Business.Tests
             Assert.That(!delayedTasks.Any());
         }
 
-        private List<DelayedTask> act(List<CustomTask> tasks)
+        private IEnumerable<DelayedTask> act(List<CustomTask> tasks)
         {
             TaskManager taskManager = new TaskManager();
 
