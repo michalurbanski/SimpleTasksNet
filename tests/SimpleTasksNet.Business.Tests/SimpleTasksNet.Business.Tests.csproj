@@ -46,10 +46,14 @@
   <ItemGroup>
     <Compile Include="CustomTask.cs" />
     <Compile Include="DelayedTask.cs" />
+    <Compile Include="LinesToWeeksConverter.cs" />
+    <Compile Include="LinesToWeeksConverterTests.cs" />
     <Compile Include="TaskManager.cs" />
     <Compile Include="DelayedTasksTests.cs" />
     <Compile Include="Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Week.cs" />
+    <Compile Include="WeekParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\SimpleTasksNet.Business\SimpleTasksNet.Business.csproj">
