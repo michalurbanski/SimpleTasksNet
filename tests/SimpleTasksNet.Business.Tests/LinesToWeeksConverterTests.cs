@@ -71,6 +71,25 @@ namespace SimpleTasksNet.Business.Tests
             Assert.AreEqual(secondWeekTitle, weeks.Last().Title);
         }
 
+        [Test]
+        public void test_week_has_day()
+        {
+            var lines = new List<string>();
+            lines.Add("Week 1");
+            lines.Add("Monday 2017-02-20");
+
+            var weeks = act(lines);
+
+            Assert.AreEqual(1, weeks.Count);
+            Assert.AreEqual(1, weeks.First().DaysCount);
+        }
+
+        [Test]
+        public void test_week_has_multiple_days()
+        {
+            Assert.Inconclusive(); 
+        }
+
         private List<Week> act(IEnumerable<string> lines)
         {
             LinesToWeeksConverter converter = new LinesToWeeksConverter();

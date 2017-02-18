@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="CustomTask.cs" />
     <Compile Include="Day.cs" />
+    <Compile Include="DayParser.cs" />
+    <Compile Include="DayParserTests.cs" />
     <Compile Include="DelayedTask.cs" />
     <Compile Include="LinesToWeeksConverter.cs" />
     <Compile Include="LinesToWeeksConverterTests.cs" />

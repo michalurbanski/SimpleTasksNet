@@ -5,7 +5,7 @@ namespace SimpleTasksNet.Business.Tests
     [TestFixture]
     class WeekParserTests
     {
-        WeekParser _parser = new WeekParser();
+        private readonly WeekParser _parser = new WeekParser();
 
         [Test]
         public void test_parse_correct_week()

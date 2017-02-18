@@ -1,9 +1,5 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SimpleTasksNet.Business.Tests
 {
@@ -18,7 +14,7 @@ namespace SimpleTasksNet.Business.Tests
 
             week.AddDay(day);
 
-            Assert.True(week.Days == 1);
+            Assert.True(week.DaysCount == 1);
         }
 
         [Test]
