@@ -5,16 +5,16 @@ namespace SimpleTasksNet.Business.Tests
 {
     public class Week
     {
-        private string _title;
         private List<Day> _days;
+
+        public int Days => _days.Count;
+        public string Title { get; private set; }
 
         public Week(string title)
         {
-            _title = title;
+            Title = title;
             _days = new List<Day>(7);
         }
-
-        public int Days => _days.Count; 
 
         public void AddDay(Day day)
         {
