@@ -1,12 +1,26 @@
-﻿namespace SimpleTasksNet.Business.Tests
-{
-    internal class Week
-    {
-        private string line;
+﻿using SimpleTasksNet.Common.Helpers;
+using System.Collections.Generic;
 
-        public Week(string line)
+namespace SimpleTasksNet.Business.Tests
+{
+    public class Week
+    {
+        private string _title;
+        private List<Day> _days;
+
+        public Week(string title)
         {
-            this.line = line;
+            _title = title;
+            _days = new List<Day>(7);
+        }
+
+        public int Days => _days.Count; 
+
+        public void AddDay(Day day)
+        {
+            day.ThrowIfNull(nameof(day));
+
+            _days.Add(day); 
         }
     }
 }
