@@ -53,6 +53,7 @@
     <Compile Include="LinesToWeeksConverterTests.cs" />
     <Compile Include="TaskManager.cs" />
     <Compile Include="DelayedTasksTests.cs" />
+    <Compile Include="TaskParser.cs" />
     <Compile Include="Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Week.cs" />

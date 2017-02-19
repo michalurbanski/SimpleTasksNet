@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace SimpleTasksNet.Business.Tests
@@ -6,7 +7,8 @@ namespace SimpleTasksNet.Business.Tests
     internal class LinesToWeeksConverter
     {
         private readonly WeekParser _weekParser = new WeekParser();
-        private readonly DayParser _dayParser = new DayParser(); 
+        private readonly DayParser _dayParser = new DayParser();
+        private readonly TaskParser _taskParser = new TaskParser(); 
 
         internal List<Week> ConvertToWeek(IEnumerable<string> lines)
         {
@@ -30,6 +32,21 @@ namespace SimpleTasksNet.Business.Tests
                 {
                     weeks.Last().AddDay(new Day(line)); 
                 }
+
+                // Day has tasks
+                bool isTask = _taskParser.IsTask(line); 
+                if(isTask)
+                {
+                    Day currentDay = weeks.Last().GetLastDay(); 
+                    if(currentDay == null)
+                    {
+                        throw new ArgumentException("Task can't be added, because no day has been found.");
+                    }
+
+                    currentDay.AddTask(new CustomTask(line));
+                }
+
+                // Other types of lines are not significant
             }
 
             return weeks; 

@@ -1,5 +1,6 @@
 ﻿using SimpleTasksNet.Common.Helpers;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SimpleTasksNet.Business.Tests
 {
@@ -21,6 +22,15 @@ namespace SimpleTasksNet.Business.Tests
             day.ThrowIfNull(nameof(day));
 
             _days.Add(day); 
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns>Reference to last day in a week</returns>
+        public Day GetLastDay()
+        {
+            return _days.LastOrDefault();
         }
     }
 }

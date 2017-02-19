@@ -11,7 +11,7 @@ namespace SimpleTasksNet.Business.Tests
         public void test_find_delayed_tasks_when_any_exists()
         {
             List<CustomTask> tasks = new List<CustomTask>();
-            tasks.Add(new DelayedTask());
+            tasks.Add(new DelayedTask(string.Empty));
 
             var delayedTasks = act(tasks); 
 
@@ -22,8 +22,8 @@ namespace SimpleTasksNet.Business.Tests
         public void test_find_delayed_tasks_no_delayed_in_tasks_collection()
         {
             List<CustomTask> tasks = new List<CustomTask>();
-            tasks.Add(new CustomTask());
-            tasks.Add(new CustomTask());
+            tasks.Add(new CustomTask(string.Empty));
+            tasks.Add(new CustomTask(string.Empty));
 
             var delayedTasks = act(tasks);
 
