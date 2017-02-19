@@ -24,7 +24,7 @@ namespace SimpleTasksNet.Business.Tests
                 return false;
             }
 
-            var splitted = line.Split(null);
+            var splitted = line.Trim().Split(null);
             if (splitted.Length != 2)
             {
                 return false;

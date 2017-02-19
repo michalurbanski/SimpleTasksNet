@@ -85,9 +85,32 @@ namespace SimpleTasksNet.Business.Tests
         }
 
         [Test]
+        public void test_week_has_day_additional_whitespaces()
+        {
+            var lines = new List<string>();
+            lines.Add("Week 1 ");
+            lines.Add("Monday 2017-02-20 ");
+
+            var weeks = act(lines);
+
+            Assert.AreEqual(1, weeks.Count);
+            Assert.AreEqual(1, weeks.First().DaysCount);
+        }
+
+        [Test]
         public void test_week_has_multiple_days()
         {
-            Assert.Inconclusive(); 
+            var lines = new List<string>();
+            lines.Add("Week 1");
+            lines.Add("Monday 2017-02-20");
+            lines.Add("Week 2");
+            lines.Add("Monday 2017-02-27");
+
+            var weeks = act(lines);
+
+            Assert.AreEqual(2, weeks.Count);
+            Assert.AreEqual(1, weeks.First().DaysCount);
+            Assert.AreEqual(1, weeks.Last().DaysCount);
         }
 
         private List<Week> act(IEnumerable<string> lines)
