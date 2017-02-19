@@ -10,12 +10,12 @@ namespace SimpleTasksNet.Business.Tests
 
         internal List<Week> ConvertToWeek(IEnumerable<string> lines)
         {
-            if(lines == null)
-            {
-                return new List<Week>(); 
-            }
+            List<Week> weeks = new List<Week>();
 
-            List<Week> weeks = new List<Week>(); 
+            if (lines == null)
+            {
+                return weeks; 
+            }
 
             foreach(var line in lines)
             {
