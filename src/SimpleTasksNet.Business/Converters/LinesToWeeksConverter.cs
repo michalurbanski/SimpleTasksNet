@@ -1,16 +1,17 @@
-﻿using System;
+﻿using SimpleTasksNet.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SimpleTasksNet.Business.Tests
+namespace SimpleTasksNet.Business
 {
-    internal class LinesToWeeksConverter
+    public class LinesToWeeksConverter
     {
         private readonly WeekParser _weekParser = new WeekParser();
         private readonly DayParser _dayParser = new DayParser();
         private readonly TaskParser _taskParser = new TaskParser(); 
 
-        internal List<Week> ConvertToWeek(IEnumerable<string> lines)
+        public List<Week> ConvertToWeek(IEnumerable<string> lines)
         {
             List<Week> weeks = new List<Week>();
 

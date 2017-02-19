@@ -1,6 +1,6 @@
-﻿namespace SimpleTasksNet.Business.Tests
+﻿namespace SimpleTasksNet.Domain
 {
-    internal class CustomTask
+    public class CustomTask
     {
         private string line;
 

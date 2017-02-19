@@ -1,10 +1,10 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace SimpleTasksNet.Business.Tests
+namespace SimpleTasksNet.Business
 {
-    internal class WeekParser
+    public class WeekParser
     {
-        internal bool IsWeek(string line)
+        public bool IsWeek(string line)
         {
             if (string.IsNullOrEmpty(line))
             {

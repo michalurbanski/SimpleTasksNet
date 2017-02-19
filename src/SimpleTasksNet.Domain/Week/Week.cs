@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SimpleTasksNet.Business.Tests
+namespace SimpleTasksNet.Domain
 {
     public class Week
     {

@@ -2,9 +2,9 @@
 using System.Globalization;
 using System.Linq;
 
-namespace SimpleTasksNet.Business.Tests
+namespace SimpleTasksNet.Business
 {
-    internal class DayParser
+    public class DayParser
     {
         private readonly string[] _allowedDays = new string[]
         {
@@ -17,7 +17,7 @@ namespace SimpleTasksNet.Business.Tests
             "Sunday"
         };
 
-        internal bool IsDay(string line)
+        public bool IsDay(string line)
         {
             if (string.IsNullOrEmpty(line))
             {

@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace SimpleTasksNet.Business.Tests
+﻿namespace SimpleTasksNet.Business
 {
-    internal class TaskParser
+    public class TaskParser
     {
-        internal bool IsTask(string line)
+        public bool IsTask(string line)
         {
             if (string.IsNullOrEmpty(line))
             {

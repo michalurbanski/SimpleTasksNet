@@ -44,22 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomTask.cs" />
-    <Compile Include="Day.cs" />
-    <Compile Include="DayParser.cs" />
     <Compile Include="DayParserTests.cs" />
-    <Compile Include="DelayedTask.cs" />
-    <Compile Include="LinesToWeeksConverter.cs" />
     <Compile Include="LinesToWeeksConverterTests.cs" />
-    <Compile Include="TaskManager.cs" />
-    <Compile Include="DelayedTasksTests.cs" />
-    <Compile Include="TaskParser.cs" />
     <Compile Include="Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Week.cs" />
-    <Compile Include="WeekParser.cs" />
     <Compile Include="WeekParserTests.cs" />
-    <Compile Include="WeekTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\SimpleTasksNet.Business\SimpleTasksNet.Business.csproj">
@@ -69,6 +58,10 @@
     <ProjectReference Include="..\..\src\SimpleTasksNet.Common\SimpleTasksNet.Common.csproj">
       <Project>{18c70d2e-9bec-4aae-991e-dd3d8657626f}</Project>
       <Name>SimpleTasksNet.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\SimpleTasksNet.Domain\SimpleTasksNet.Domain.csproj">
+      <Project>{242FF453-88AD-483B-8877-4ED94CC69527}</Project>
+      <Name>SimpleTasksNet.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

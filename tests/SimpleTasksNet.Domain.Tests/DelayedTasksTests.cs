@@ -1,8 +1,9 @@
 ﻿using NUnit.Framework;
+using SimpleTasksNet.Business;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SimpleTasksNet.Business.Tests
+namespace SimpleTasksNet.Domain.Tests
 {
     [TestFixture]
     class DelayedTasksTests

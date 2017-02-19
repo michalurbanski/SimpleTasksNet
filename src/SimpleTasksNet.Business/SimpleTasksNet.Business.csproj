@@ -40,7 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\LinesToWeeksConverter.cs" />
+    <Compile Include="Parsers\DayParser.cs" />
+    <Compile Include="Parsers\TaskParser.cs" />
+    <Compile Include="Parsers\WeekParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SimpleTasksNet.Domain\SimpleTasksNet.Domain.csproj">

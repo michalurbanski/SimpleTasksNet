@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using SimpleTasksNet.Domain;
+using System.Collections.Generic;
 using System.Linq;
 
-namespace SimpleTasksNet.Business.Tests
+namespace SimpleTasksNet.Business
 {
-    internal class TaskManager
+    public class TaskManager
     {
-        internal IEnumerable<DelayedTask> FindDelayedTasks(List<CustomTask> tasks)
+        public IEnumerable<DelayedTask> FindDelayedTasks(List<CustomTask> tasks)
         {
             if(tasks == null || tasks.Count == 0)
             {

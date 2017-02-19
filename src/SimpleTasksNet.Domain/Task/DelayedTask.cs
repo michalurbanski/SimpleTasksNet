@@ -1,6 +1,6 @@
-﻿namespace SimpleTasksNet.Business.Tests
+﻿namespace SimpleTasksNet.Domain
 {
-    internal class DelayedTask : CustomTask
+    public class DelayedTask : CustomTask
     {
         public DelayedTask(string line) : base(line)
         {

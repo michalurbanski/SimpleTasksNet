@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SimpleTasksNet.Business.Tests
+namespace SimpleTasksNet.Domain
 {
     public class Day
     {
@@ -14,7 +14,7 @@ namespace SimpleTasksNet.Business.Tests
             _title = title;
         }
 
-        internal void AddTask(CustomTask customTask)
+        public void AddTask(CustomTask customTask)
         {
             _tasks.Add(customTask); 
         }

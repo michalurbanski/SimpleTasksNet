@@ -40,7 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Day\Day.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Task\CustomTask.cs" />
+    <Compile Include="Task\DelayedTask.cs" />
+    <Compile Include="Week\Week.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleTasksNet.Common\SimpleTasksNet.Common.csproj">
+      <Project>{18c70d2e-9bec-4aae-991e-dd3d8657626f}</Project>
+      <Name>SimpleTasksNet.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

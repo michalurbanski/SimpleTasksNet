@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using System;
 
-namespace SimpleTasksNet.Business.Tests
+namespace SimpleTasksNet.Domain.Tests
 {
     [TestFixture]
     class WeekTests
