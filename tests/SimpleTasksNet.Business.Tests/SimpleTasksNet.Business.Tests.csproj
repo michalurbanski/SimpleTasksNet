@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DayParserTests.cs" />
+    <Compile Include="TaskManagerTests.cs" />
     <Compile Include="LinesToWeeksConverterTests.cs" />
     <Compile Include="TaskParserTests.cs" />
     <Compile Include="Test.cs" />
