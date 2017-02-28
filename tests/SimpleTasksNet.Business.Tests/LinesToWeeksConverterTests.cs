@@ -138,6 +138,38 @@ namespace SimpleTasksNet.Business.Tests
             Assert.AreEqual(1, weeks.Last().GetLastDay().TasksCount); 
         }
 
+        [Test]
+        public void test_multiple_weeks_are_correctly_detected_on_production_data()
+        {
+            var lines = new List<string>();
+            lines.Add("----------------");
+            lines.Add("Week 1");
+            lines.Add("");
+            lines.Add("Monday 2017-02-20");
+            lines.Add("- First task");
+            lines.Add("- Second task");
+            lines.Add("");
+            lines.Add("----------------");
+            lines.Add("Week 2");
+            lines.Add("Monday 2017-02-27");
+            lines.Add("- Third task");
+            lines.Add("");
+
+            // TODO: this two lines are sign to terminate further file processing - it's the end of weeks with tasks in this file 
+            // (as file can have additional lines, which are not planned tasks)
+            lines.Add("-----------------"); 
+            lines.Add("-----------------");
+
+            var weeks = act(lines);
+
+            Assert.AreEqual(2, weeks.Count);
+            Assert.AreEqual(1, weeks.First().DaysCount);
+            Assert.AreEqual(1, weeks.Last().DaysCount);
+
+            Assert.AreEqual(2, weeks.First().GetLastDay().TasksCount);
+            Assert.AreEqual(1, weeks.Last().GetLastDay().TasksCount);
+        }
+
         private List<Week> act(IEnumerable<string> lines)
         {
             LinesToWeeksConverter converter = new LinesToWeeksConverter();

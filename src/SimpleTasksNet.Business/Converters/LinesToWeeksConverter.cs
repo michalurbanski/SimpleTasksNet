@@ -47,7 +47,7 @@ namespace SimpleTasksNet.Business
                     currentDay.AddTask(new CustomTask(line));
                 }
 
-                // Other types of lines are not significant
+                // Other types of lines are not significant - just continue if such line occurs
             }
 
             return weeks; 
