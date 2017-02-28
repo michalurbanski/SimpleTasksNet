@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTasksNet.Business.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTasksNet.Domain.Tests", "tests\SimpleTasksNet.Domain.Tests\SimpleTasksNet.Domain.Tests.csproj", "{D5F7403F-E39A-42DB-BE5B-F2476AB5CEC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTasksNet.Logging", "..\src\SimpleTasksNet\SimpleTasksNet.Logging\SimpleTasksNet.Logging.csproj", "{8D691B79-1B29-4E6C-BC29-E19C059CD146}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTasksNet.Logging", "src\SimpleTasksNet.Logging\SimpleTasksNet.Logging.csproj", "{8D691B79-1B29-4E6C-BC29-E19C059CD146}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
