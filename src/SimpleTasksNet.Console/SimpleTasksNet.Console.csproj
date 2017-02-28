@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\src\SimpleTasksNet\SimpleTasksNet.Logging\SimpleTasksNet.Logging.csproj">
+      <Project>{8D691B79-1B29-4E6C-BC29-E19C059CD146}</Project>
+      <Name>SimpleTasksNet.Logging</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SimpleTasksNet.Business\SimpleTasksNet.Business.csproj">
       <Project>{afe30adb-cff1-4ac7-9f82-59fbfcf0def6}</Project>
       <Name>SimpleTasksNet.Business</Name>
