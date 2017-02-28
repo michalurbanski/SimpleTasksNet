@@ -1,11 +1,5 @@
 ﻿using SimpleTasksNet.Logging.Implementation;
 using SimpleTasksNet.Logging.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SimpleTasksNet.Console
 {
@@ -15,7 +9,7 @@ namespace SimpleTasksNet.Console
 
         static void Main(string[] args)
         {
-            _logger.Info("Progam started");
+            _logger.Info("Program started");
         }
     }
 }
