@@ -7,7 +7,8 @@ namespace SimpleTasksNet.Logging.Implementation
     {
         public static ILogger GetLogger(Type type)
         {
-            return new Log4NetWrapper(type); 
+            //return new Log4NetWrapper(type); 
+            throw new NotImplementedException(); 
         }
     }
 }
