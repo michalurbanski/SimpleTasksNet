@@ -2,11 +2,11 @@
 {
     public class CustomTask
     {
-        private string line;
+        public string Line { get; private set; }
 
         public CustomTask(string line)
         {
-            this.line = line;
+            Line = line; 
         }
     }
 }

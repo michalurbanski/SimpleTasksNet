@@ -9,6 +9,11 @@ namespace SimpleTasksNet.Domain
 
         public int TasksCount { get { return _tasks.Count; } }
 
+        public IEnumerable<CustomTask> Tasks
+        {
+            get { return _tasks; }
+        }
+
         public Day(string title)
         {
             _title = title;
