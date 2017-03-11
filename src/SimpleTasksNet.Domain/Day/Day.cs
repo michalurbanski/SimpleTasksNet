@@ -4,9 +4,9 @@ namespace SimpleTasksNet.Domain
 {
     public class Day
     {
-        private string _title;
-        private List<CustomTask> _tasks = new List<CustomTask>();
+        private readonly List<CustomTask> _tasks;
 
+        public string Title { get; private set; }
         public int TasksCount { get { return _tasks.Count; } }
 
         public IEnumerable<CustomTask> Tasks
@@ -16,7 +16,8 @@ namespace SimpleTasksNet.Domain
 
         public Day(string title)
         {
-            _title = title;
+            Title = title;
+            _tasks = new List<CustomTask>(); 
         }
 
         public void AddTask(CustomTask customTask)

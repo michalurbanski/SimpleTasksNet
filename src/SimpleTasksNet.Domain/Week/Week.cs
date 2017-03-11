@@ -10,7 +10,8 @@ namespace SimpleTasksNet.Domain
 
         public int DaysCount => _days.Count;
         public string Title { get; private set; }
-
+        public IEnumerable<Day> Days { get { return _days; }}
+        
         public Week(string title)
         {
             Title = title;
@@ -21,9 +22,10 @@ namespace SimpleTasksNet.Domain
         {
             day.ThrowIfNull(nameof(day));
 
-            _days.Add(day); 
+            _days.Add(day);
         }
 
+        // TODO: Think about existence of this method - is it needed? 
         /// <summary>
         /// 
         /// </summary>
