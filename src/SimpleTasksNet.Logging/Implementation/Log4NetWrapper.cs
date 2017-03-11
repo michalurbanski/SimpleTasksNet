@@ -1,6 +1,7 @@
 ﻿using log4net;
 using SimpleTasksNet.Logging.Interfaces;
 using System;
+using System.Reflection;
 
 namespace SimpleTasksNet.Logging.Implementation
 {
@@ -8,9 +9,9 @@ namespace SimpleTasksNet.Logging.Implementation
     {
         private readonly ILog _logger;
 
-        public Log4NetWrapper(Type type)
+        public Log4NetWrapper()
         {
-            _logger = log4net.LogManager.GetLogger(type); 
+            _logger = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType); 
         }
 
         public bool IsDebugEnabled => _logger.IsDebugEnabled;

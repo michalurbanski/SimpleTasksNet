@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Implementation\Log4NetWrapper.cs" />
-    <Compile Include="Implementation\LogManager.cs" />
     <Compile Include="Interfaces\ILogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
