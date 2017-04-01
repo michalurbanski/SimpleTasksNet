@@ -174,7 +174,7 @@ namespace SimpleTasksNet.Business.Tests
         {
             LinesToWeeksConverter converter = new LinesToWeeksConverter();
 
-            return converter.ConvertToWeek(lines); 
+            return converter.ConvertToWeeks(lines); 
         }
     }
 }

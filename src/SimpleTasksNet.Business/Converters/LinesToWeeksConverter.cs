@@ -11,7 +11,7 @@ namespace SimpleTasksNet.Business
         private readonly DayParser _dayParser = new DayParser();
         private readonly TaskParser _taskParser = new TaskParser(); 
 
-        public List<Week> ConvertToWeek(IEnumerable<string> lines)
+        public List<Week> ConvertToWeeks(IEnumerable<string> lines)
         {
             List<Week> weeks = new List<Week>();
 
