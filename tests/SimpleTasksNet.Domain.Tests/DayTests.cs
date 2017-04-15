@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 using System.Linq;
 
 namespace SimpleTasksNet.Domain.Tests
@@ -11,6 +12,14 @@ namespace SimpleTasksNet.Domain.Tests
         {
             Day day = new Day("Monday 2017-03-13");
             Assert.That(day.TasksCount == 0); 
+        }
+
+        [TestCase("")]
+        [TestCase("  ")]
+        [TestCase(null)]
+        public void test_day_title_null_or_empty_throws_exception(string name)
+        {
+            Assert.Throws<ArgumentException>(() => new Day(name));
         }
 
         [Test]

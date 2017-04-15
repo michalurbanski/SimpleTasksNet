@@ -11,7 +11,7 @@ namespace SimpleTasksNet.Domain.Tests
         public void test_week_can_have_days()
         {
             Week week = new Week(string.Empty);
-            Day day = new Day(string.Empty);
+            Day day = new Day("Monday 2017-04-17");
 
             week.AddDay(day);
 
