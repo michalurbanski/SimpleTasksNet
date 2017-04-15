@@ -1,5 +1,5 @@
-﻿using System;
-using System.Globalization;
+﻿using SimpleTasksNet.Common.Helpers;
+using System;
 using System.Linq;
 
 namespace SimpleTasksNet.Business
@@ -35,9 +35,8 @@ namespace SimpleTasksNet.Business
                 return false;
             }
 
-            DateTime date;
-            if (!DateTime.TryParseExact(splitted[1], "yyyy-MM-dd", CultureInfo.InvariantCulture, 
-                DateTimeStyles.None, out date))
+            DateTime? dateFormat = DayHelper.CheckIfCorrectDateFormat(splitted[1]);
+            if(dateFormat == null)
             {
                 return false; 
             }

@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consts\DateTimeFormats.cs" />
     <Compile Include="Helpers\DayHelper.cs" />
     <Compile Include="Helpers\ObjectHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

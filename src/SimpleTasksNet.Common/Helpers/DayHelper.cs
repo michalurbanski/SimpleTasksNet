@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SimpleTasksNet.Common.Consts;
+using System;
 using System.Globalization;
 
 namespace SimpleTasksNet.Common.Helpers
@@ -17,13 +18,25 @@ namespace SimpleTasksNet.Common.Helpers
 
             var splitted = line.Split();
 
-            DateTime result;
-            if (!DateTime.TryParseExact(splitted[1], "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out result))
+            DateTime? result = CheckIfCorrectDateFormat(splitted[1]); 
+            if(result == null)
             {
                 throw new ArgumentException($"Cannot parse date for day: {line}");
             }
 
-            return result; 
+            return result.Value; 
+        }
+
+        public static DateTime? CheckIfCorrectDateFormat(string input)
+        {
+            DateTime result; 
+            if (!DateTime.TryParseExact(input, DateTimeFormats.DATE_TIME_FORMAT, CultureInfo.InvariantCulture, 
+                DateTimeStyles.None, out result))
+            {
+                return null; 
+            }
+
+            return result;
         }
     }
 }

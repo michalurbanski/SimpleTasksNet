@@ -49,6 +49,10 @@
     <Compile Include="TaskRetriever.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SimpleTasksNet.Common\SimpleTasksNet.Common.csproj">
+      <Project>{18C70D2E-9BEC-4AAE-991E-DD3D8657626F}</Project>
+      <Name>SimpleTasksNet.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SimpleTasksNet.Domain\SimpleTasksNet.Domain.csproj">
       <Project>{242ff453-88ad-483b-8877-4ed94cc69527}</Project>
       <Name>SimpleTasksNet.Domain</Name>
