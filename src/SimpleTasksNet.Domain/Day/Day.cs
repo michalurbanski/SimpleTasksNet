@@ -4,10 +4,10 @@ namespace SimpleTasksNet.Domain
 {
     public class Day
     {
-        public List<CustomTask> Tasks { get; private set;}
-
         public string Title { get; private set; }
-        public int TasksCount { get { return Tasks.Count; } }
+
+        public List<CustomTask> Tasks { get; private set;}
+        public int TasksCount => Tasks.Count;
 
         public Day(string title)
         {

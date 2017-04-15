@@ -6,14 +6,16 @@ namespace SimpleTasksNet.Domain
 {
     public class Week
     {
+        public string Title { get; private set; }
+        private const int DAYS_IN_WEEK = 7;
+
         public List<Day> Days { get; private set; }
         public int DaysCount => Days.Count;
-        public string Title { get; private set; }
-        
+                
         public Week(string title)
         {
             Title = title;
-            Days = new List<Day>(7);
+            Days = new List<Day>(DAYS_IN_WEEK);
         }
 
         public void AddDay(Day day)
