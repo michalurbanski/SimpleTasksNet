@@ -17,11 +17,15 @@ namespace SimpleTasksNet.Common.Helpers
             line.ThrowIfNullOrEmpty(nameof(line));
 
             var splitted = line.Split();
+            if(splitted.Length != 2)
+            {
+                throw new ArgumentException($"Incorrect line format - it should have day and date only: {line}", nameof(line)); 
+            }
 
             DateTime? result = CheckIfCorrectDateFormat(splitted[1]); 
             if(result == null)
             {
-                throw new ArgumentException($"Cannot parse date for day: {line}");
+                throw new ArgumentException($"Cannot parse date for day: {line}", nameof(line));
             }
 
             return result.Value; 
