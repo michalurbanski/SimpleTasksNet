@@ -16,7 +16,7 @@ namespace SimpleTasksNet.Common.Helpers
         {
             line.ThrowIfNullOrEmpty(nameof(line));
 
-            var splitted = line.Split();
+            var splitted = line.Trim().Split();
             if(splitted.Length != 2)
             {
                 throw new ArgumentException($"Incorrect line format - it should have day and date only: {line}", nameof(line)); 
