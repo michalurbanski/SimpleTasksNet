@@ -8,7 +8,7 @@ namespace SimpleTasksNet.Common.Tests
     class DayHelperTests
     {
         [Test]
-        public void test_extract_date_from_day_line()
+        public void returns_valid_date_when_line_format_is_correct()
         {
             string line = "Monday 2017-04-17";
 
@@ -18,7 +18,7 @@ namespace SimpleTasksNet.Common.Tests
         }
 
         [Test]
-        public void test_extract_date_from_day_line_fails_when_date_format_is_invalid()
+        public void throws_exception_when_date_format_in_line_is_incorrect()
         {
             string line = "Monday 2017/04/17";
 
@@ -26,7 +26,7 @@ namespace SimpleTasksNet.Common.Tests
         }
 
         [Test]
-        public void test_empty_day_line_throws_exception()
+        public void throws_exception_when_line_is_empty()
         {
             string line = string.Empty;
 
